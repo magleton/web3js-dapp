@@ -1,0 +1,146 @@
+{
+  "root": "value",
+  "key": "\"{{!label}}\" ",
+  "messages": {
+    "wrapArrays": true
+  },
+  "any": {
+    "unknown": "不允许",
+    "invalid": "包含无效值",
+    "empty": "不能为空",
+    "required": "确定",
+    "allowOnly": "必须有{{valids}}之一",
+    "default": "启动默认方法时出错"
+  },
+  "alternatives": {
+    "base": "不符合任何允许的替代方案",
+    "child": null
+  },
+  "array": {
+    "base": "必须是一个数组",
+    "includes": "位置{{pos}}与任何允许的类型都不匹配",
+    "includesSingle": "唯一值 \"{{!label}}\" 与任何允许的类型都不匹配",
+    "includesOne": "位置{{pos}}不正确，因为{{reason}}",
+    "includesOneSingle": "\"{{!label}}\" 的唯一值不正确，因为{{reason}}",
+    "includesRequiredUnknowns": "不包含{{unknownMisses}}强制值",
+    "includesRequiredKnowns": "不包含{{knownMisses}}",
+    "includesRequiredBoth": "不包含其他所需值的{{knownMisses}}和{{unknownMisses}}",
+    "excludes": "位置{{pos}}包含排除值",
+    "excludesSingle": "唯一值 \"{{!label}}\" 包含排除值",
+    "min": "必须至少包含{{limit}}个元素",
+    "max": "必须包含不超过{{limit}}个元素",
+    "length": "必须包含{{limit}}个元素",
+    "ordered": "位置{{pos}}不正确，因为{{reason}}",
+    "orderedLength": "位置{{pos}}中的位置不正确，因为数组必须包含不超过{{limit}}个元素",
+    "ref": "引用 \"{{ref}}\" 这些不是正数",
+    "sparse": "数组不能包含空值或表示“false”值",
+    "unique": "位置{{pos}}包含重复值"
+  },
+  "boolean": {
+    "base": "必须是布尔值"
+  },
+  "binary": {
+    "base": "必须是缓冲区或字符串",
+    "min": "必须至少为{{limit}}个字节",
+    "max": "必须包含{{limit}}或更少的字节",
+    "length": "必须有{{limit}}个字节"
+  },
+  "date": {
+    "base": "您必须以毫秒或正确的日期字符串",
+    "format": "必须是具有以下格式之一的字符串{{format}}",
+    "strict": "必须是有效的日期",
+    "min": "必须包含至少 \"{{limit}}\" 元素",
+    "max": "不得包含\"{{limit}}\"个以上的元素。",
+    "isoDate": "必须是真正的ISO 8601日期",
+    "timestamp": {
+      "javascript": "必须是有效的时间戳或毫秒数",
+      "unix": "必须是有效的时间戳或秒数"
+    },
+    "ref": "链接 \"{{ref}}\" 这不是日期"
+  },
+  "function": {
+    "base": "必须是一个功能",
+    "arity": "必须有arity {{n}}",
+    "minArity": "必须至少{{n}}",
+    "maxArity": "必须有不超过{{n}}",
+    "ref": "应该是对Joi的引用",
+    "class": "必须是一个班级"
+  },
+  "lazy": {
+    "base": "电路错误：必须指定延迟模式",
+    "schema": "电路错误：电路的懒惰功能必须返回电路"
+  },
+  "object": {
+    "base": "应该是对象",
+    "child": "孩子“{{！child}} \"不正确，因为{{reason}}",
+    "min": "必须包含至少{{limit}}个孩子",
+    "max": "必须包含不超过{{limit}}个孩子",
+    "length": "必须有{{limit}}个孩子",
+    "allowUnknown": "!! \"{{！child}} \"不允许",
+    "with": "!! \"{{mainWithLabel}} \"没有强制性的同行\"{{peerWithLabel}} \"",
+    "without": "!! \"{{mainWithLabel}} \"与禁止的对等人发生冲突\"{{peerWithLabel}} \"",
+    "missing": "必须至少包含{{peersWithLabels}}中的一个",
+    "xor": "包含独占同伴之间的冲突{{peersWithLabels}}",
+    "or": "必须包含{{peersWithLabels}}中的至少一个",
+    "and": "包含{{presentWithLabels}}没有必需的对等{{missingWithLabels}}",
+    "nand": "!! \"{{mainWithLabel}} \"不得与{{peersWithLabels}}同时存在",
+    "assert": "!! \"{{ref}} \"验证失败，因为\"{{ref}} \"无法{{message}}",
+    "rename": {
+      "multiple": "无法重命名子\"{{from}} \"，因为多个重命名已被禁用，另一个键已重命名为\"{{to}} \"",
+      "override": "无法重命名子\"{{from}} \"，因为覆盖被禁用且目标\"{{to}} \"存在",
+      "regex": {
+        "multiple": "无法重命名子项{{from}}，因为多个重命名已被禁用，另一个键已重命名为\"{{to}} \"",
+        "override": "无法重命名子项{{from}}，因为覆盖已停用且目标\"{{to}} \"存在"
+      }
+    },
+    "type": "必须是\"{{type}} \"的实例",
+    "schema": "必须是Joi的一个例子"
+  },
+  "number": {
+    "base": "必须是一个数字",
+    "min": "必须至少{{limit}}",
+    "max": "必须不超过{{limit}}",
+    "less": "必须小于{{limit}}",
+    "greater": "必须大于{{limit}}",
+    "float": "必须浮动或加倍",
+    "integer": "必须是整数",
+    "negative": "必须是负数",
+    "positive": "必须是正数",
+    "precision": "必须不超过{{limit}}小数",
+    "ref": "引用\"{{ref}} \"不是数字",
+    "multiple": "必须是{{multiple}}的倍数"
+  },
+  "string": {
+    "base": "必须是一个字符串",
+    "min": "长度必须至少为{{limit}}个字符",
+    "max": "长度不得超过{{limit}}个字符",
+    "length": "长度必须为{{limit}}个字符",
+    "alphanum": "必须只包含字母数字字符",
+    "token": "必须仅包含字母数字字符和下划线",
+    "regex": {
+      "base": "值\"{{！value}}\"与所需模式不匹配：{{pattern}}",
+      "name": "值“{{！value}} \"与模式{{name}}不匹配",
+      "invert": {
+        "base": "值\"{{！value}}\"匹配反转模式：{{pattern}}",
+        "name": "值\"{{！value}}\"匹配反转模式{{name}}"
+      }
+    },
+    "email": "必须是有效的电子邮件地址",
+    "uri": "必须是有效的uri",
+    "uriRelativeOnly": "必须是有效的亲戚uri",
+    "uriCustomScheme": "必须是具有与模式{{scheme}}对应的模式的有效uri",
+    "isoDate": "必须是ISO 8601的有效日期",
+    "guid": "必须是有效的GUID",
+    "hex": "必须只包含十六进制字符",
+    "base64": "必须是base64的有效字符串",
+    "hostname": "必须是有效的主机名",
+    "normalize": "必须是unicode，以{{form}}的形式规范化",
+    "lowercase": "必须只包含小写字母",
+    "uppercase": "必须只包含大写字符",
+    "trim": "不应该在开头或结尾有空格",
+    "creditCard": "必须是信用卡",
+    "ref": "引用\"{{ref}} \"不是数字",
+    "ip": "必须是{{cidr}} CIDR的有效IP地址",
+    "ipVersion": "必须是具有{{cidr}} CIDR的以下{{version}}版本之一的有效IP地址"
+  }
+}

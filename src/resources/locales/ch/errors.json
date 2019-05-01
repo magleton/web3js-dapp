@@ -1,0 +1,31 @@
+{
+  "ch": {
+    "translation": {
+      "Your account verification failed. Please contact {{companyName}} team": "您的账号验证失败了. Пожалуйста, 请联系{{companyName}}客服",
+      "Your account is verified already": "您的账号已验证了",
+      "Your account verification is pending. Please wait for status update": "您的帐户验证正在处理， 请等待",
+      "Insufficient funds to perform this operation and pay tx fee": "缺乏执行此任务和支付佣金的资金",
+      "Authenticator is disabled already": "身份验证已被禁用",
+      "Authenticator is enabled already": "身份验证已启用",
+      "Invalid password": "无效的密码",
+      "Account is not activated! Please check your email": "帐户未激活！ 请查看您的邮箱",
+      "User is activated already": "用户已激活",
+      "Code was expired or not found. Please retry": "代码已过期或未找到。 请重试",
+      "User is not found": "找不到用户",
+      "User already exists": "用户已存在",
+      "Not correct code": "代码不正确",
+      "Not valid referral code": "无效的推荐代码",
+      "You are not able to invite yourself": "您无法邀请自己",
+      "It is not possible to invite more than 5 emails at once": "一次只能邀请5封以上的电子邮件",
+      "You have already sent 50 invites during last 24 hours": "您在过去24小时内已发送了50个邀请",
+      "You have already invited {{email}} during last 24 hours": "您已在过去24小时内邀请过 {{email}}",
+      "You have already invited {{email}} at least 5 times": "您已邀请{{email}}至少5次了",
+      "{{email}} account already exists": "{{email}}帐户已存在",
+      "You have used all attempts to enter code": "您已使用所有输入代码的尝试",
+      "Not correct mnemonic phrase": "不正确的助记短语",
+      "must be at least 8 characters, contain at least one number, 1 small and 1 capital letter": "必须至少包含8个字符，包含至少一个数字，1个小写和1个大写字母",
+      "must be a valid phone number (+1234567890)": "必须是有效的电话号码 (+1234567890)",
+      "{{companyName}} Login Verification Code": "{{companyName}} 登录验证码"
+    }
+  }
+}
